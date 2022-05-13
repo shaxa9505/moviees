@@ -11,15 +11,16 @@ router.get('/', (req, res, next) => {
 // POST create new api
 router.post('/', (req, res, next) => {
 
-    const {title, category, country, year, imdb_score} = req.body;
+    // const {title, category, country, year, imdb_score} = req.body;
 
-    const moviee = new Moviee({
-        title: title,
-        category: category,
-        country: country,
-        year: year,
-        imdb_score: imdb_score
-    })
+    // const moviee = new Moviee({
+    //     title: title,
+    //     category: category,
+    //     country: country,
+    //     year: year,
+    //     imdb_score: imdb_score
+    // })
+    const moviee = new Moviee(req.body)
 
     const promise = moviee.save();
 
