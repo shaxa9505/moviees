@@ -5,7 +5,13 @@ const Moviee = require("../model/Movies")
 
 /* GET home page. */
 router.get('/', (req, res, next) => {
-    res.render('index', { title: 'Express' });
+    Moviee.find({}, (err, data) => {
+        if(err) {
+            throw err
+        } 
+        res.json(data)
+    })
+    
 });
 
 // POST create new api
