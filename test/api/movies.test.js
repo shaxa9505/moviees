@@ -54,6 +54,14 @@ describe("Post orqali authenticate", () => {
         })
     })
 
+
 })
 
 
+ 
+
+
+
+/// heroku password  =====     !R4G>7c5~G5XzPD
+
+/// shaxa__9505
